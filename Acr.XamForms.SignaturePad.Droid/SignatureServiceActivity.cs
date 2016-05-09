@@ -8,12 +8,12 @@ using Xamarin.Forms.Platform.Android;
 using Button = Android.Widget.Button;
 using NativeView = global::SignaturePad.SignaturePadView;
 using RelativeLayout = Android.Widget.RelativeLayout;
-
+using Android.Support.V7.App;
 
 namespace Acr.XamForms.SignaturePad.Droid {
 
     [Activity]
-    public class SignaturePadActivity : Activity {
+    public class SignaturePadActivity : AppCompatActivity {
         private static readonly string fileStore;
         private NativeView signatureView;
         private Button btnSave;
