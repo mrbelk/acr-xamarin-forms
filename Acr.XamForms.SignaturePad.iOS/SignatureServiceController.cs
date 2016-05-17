@@ -30,6 +30,10 @@ namespace Acr.XamForms.SignaturePad.iOS {
             this.points = points;
         }
 
+        public override UIInterfaceOrientationMask GetSupportedInterfaceOrientations()
+        {
+            return UIInterfaceOrientationMask.Landscape;
+        }
 
         public override void LoadView() {
             base.LoadView();

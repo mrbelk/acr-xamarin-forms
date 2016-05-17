@@ -9,10 +9,11 @@ using Button = Android.Widget.Button;
 using NativeView = global::SignaturePad.SignaturePadView;
 using RelativeLayout = Android.Widget.RelativeLayout;
 using Android.Support.V7.App;
+using Android.Content.PM;
 
 namespace Acr.XamForms.SignaturePad.Droid {
 
-    [Activity]
+    [Activity(ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
     public class SignaturePadActivity : AppCompatActivity {
         private static readonly string fileStore;
         private NativeView signatureView;
