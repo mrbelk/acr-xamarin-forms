@@ -13,7 +13,7 @@ using Android.Content.PM;
 
 namespace Acr.XamForms.SignaturePad.Droid {
 
-    [Activity(ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation, ScreenOrientation = ScreenOrientation.Portrait)]
+    [Activity(ScreenOrientation = Android.Content.PM.ScreenOrientation.Landscape)]
     public class SignaturePadActivity : AppCompatActivity {
         private static readonly string fileStore;
         private NativeView signatureView;
